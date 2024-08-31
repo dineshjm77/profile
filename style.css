@@ -208,6 +208,7 @@ span{
     border: .2rem solid var(--text-color);
     transform: scale(1.02);
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transform: scale(1.1);
 
 }
 .services-box i {
@@ -247,6 +248,130 @@ span{
     transition: .5s ease;
     opacity: 0.7;
 }
+.portfolio{
+    background-color: var(--sed-bf-color);
+
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow:  0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+.portfolio-box img:hover{
+    transform: scale(1.1);
+}
+.portfolio-box .portfolio-layar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,1),var(--main-color));
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layar{
+    transform: translateY(0);
+
+}
+.portfolio-layar h4{
+    font-size: 3rem;
+}
+.portfolio-layar p{
+    font-size: 1.6rem;
+    margin: 3rem 0 1rem;
+   
+}
+.portfolio-layar a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+.portfolio-layar a i{
+    font-size: 2rem;
+    color: var(--sed-bf-color);
+}
+.skill h2{
+    margin-bottom: 5rem;
+
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skill-container .skill-box{
+    flex: 1 1 30rem;
+    background-color: var(--sed-bf-color);
+    padding: 6rem 6rem 9rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .2s ease;
+    margin: 10px;
+
+}
+.skill-container .skill-box:hover{
+    border: .2rem solid var(--text-color);
+    transform: scale(1.02);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transform: scale(1.1);
+
+}
+.skill-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+    margin: 2rem;
+}
+.skill-box h3{
+    font-size: 2.6rem;
+}
+.skill-box a{
+    font-size:1.6rem ;
+    margin: 1rem;
+}
+
+.contect-box{
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.contect-box h1{
+    font-size: 6rem;
+
+}
+.contect-box h3{
+    font-size: 2rem;
+}
+.contect{
+    background-color: var(--sed-bf-color);
+}
+
 
 
 
