@@ -95,9 +95,7 @@ span{
 
 }
 .home-img img{
-    width: 24vw;
-    height: 27vw;
-    border-radius: 50%;
+    width: 30vw;
     animation: floatImage 4s ease-in infinite;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(238, 236, 236, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     
@@ -345,7 +343,7 @@ span{
 .skill-box i {
     font-size: 7rem;
     color: var(--main-color);
-    margin: 2rem;
+    margin: 3rem;
 }
 .skill-box h3{
     font-size: 2.6rem;
@@ -357,8 +355,8 @@ span{
 
 .contect-box{
     justify-content: center;
-    text-align: left;
-    width: 100%;
+    align-items: center;
+    
 }
 
 .contect-box h1{
@@ -366,10 +364,110 @@ span{
 
 }
 .contect-box h3{
+    font-size: 3rem;
+}
+.contect-box a{
+    padding-top: 2rem;
     font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    align-items: center;
 }
 .contect{
     background-color: var(--sed-bf-color);
+}
+.contect-layar{
+    
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+.contact-icon{
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+    padding: 2rem;
+    margin: 2rem;
+    gap: 20px;
+}
+.contact-active {
+    display: flex; 
+    flex-direction: column; 
+    align-items: left; 
+    padding: 10px; 
+    margin-bottom: 2rem;
+
+   
+    color: var(--bg-color);
+    width: 200px; 
+}
+@media (max-width :1200px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width :991px)
+{
+   .heater{
+    padding: 2rem 3%;
+   }
+   section{
+    padding: 10rem 3%;
+   }
+   .services{
+    padding: 7rem;
+   }
+   .portfolio{
+
+    padding-bottom: 7rem;
+   }
+   .contect{
+    min-height: auto;
+
+   }
+   .skill{
+    padding: 7rem;
+   }
+}
+@media (max-width :768px)
+{
+    #menu-icon{
+        display: block;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .about-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 90vw;
+        margin-top: 4rem;
+
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img img{
+        width: 90vw;
+        margin-top: 4rem;
+
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
 }
 
 
