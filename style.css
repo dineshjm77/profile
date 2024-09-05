@@ -77,12 +77,34 @@ section {
 
 }
 
-#menu-icon {
-    font-size: 3rem;
-    color: var(--text-color);
-    display: none;
-
+/* Display navbar correctly when active */
+.navbar {
+    display: none; /* Ensure it is hidden by default */
+    flex-direction: column; /* Make it a column for mobile view */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: var(--bg-color);
+    border-top: 1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Smooth transition effect */
 }
+
+/* Show navbar when active */
+.navbar.active {
+    display: flex;
+}
+
+/* Show the menu icon for mobile view */
+#menu-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it is above other elements */
+}
+
+
 
 .home {
     display: flex;
