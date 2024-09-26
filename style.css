@@ -72,9 +72,9 @@ section {
 .navbar a:hover {
     color: var(--main-color);
     background-color: var(--text-color);
-    padding: 10px;
+    
 
-    box-shadow: rgba(236, 234, 234, 0.35) 0px 5px 15px;
+    
 
 }
 
@@ -90,7 +90,7 @@ section {
     background-color: var(--bg-color);
     border-top: 1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease; /* Smooth transition effect */
+    transition: all 0.3s ease; 
 }
 
 /* Show navbar when active */
@@ -98,11 +98,11 @@ section {
     display: flex;
 }
 
-/* Show the menu icon for mobile view */
+
 #menu-icon {
     display: block;
     cursor: pointer;
-    z-index: 1001; /* Ensure it is above other elements */
+    z-index: 1001; 
 }
 .heater i
 {
