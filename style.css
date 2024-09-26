@@ -78,14 +78,13 @@ section {
 
 }
 
-/* Display navbar correctly when active */
 .navbar {
     display: none; /* Ensure it is hidden by default */
     flex-direction: column; /* Make it a column for mobile view */
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 40%;
     padding: 1rem 3%;
     background-color: var(--bg-color);
     border-top: 1rem solid rgba(0, 0, 0, 0.2);
